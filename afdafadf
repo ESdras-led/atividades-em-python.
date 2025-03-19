@@ -1,0 +1,26 @@
+#Simulador de Caixa Eletrônico Simplificado
+cliente = input("informe seu nome para acessar a conta:")
+saldo = 1000
+
+print(f'Olá {cliente}, seja bem-vindo!')
+
+while True:
+  print("[1] saldo")
+  print("[2] Sacar") 
+  print("[3] Depositar") 
+  print("[4] Sair")
+  
+  escolha = int(input("Escolha uma Opção:"))
+  if escolha == 1:
+    print(f" seu saldo é: {saldo}$")
+  elif escolha == 2:
+    sacar = int(input("quanto voce deseja sacar:"))
+    saldo = saldo - sacar
+    print(f"seu novo saldo é:{saldo}")
+  elif escolha == 3:
+    depositar = int(input("quanto voce deseja depositar:"))
+    saldo = saldo + depositar
+    print(f"seu novo saldo é:{saldo}") 
+  elif escolha == 4:
+    print("obrigado por usar nosso serviço, volte sempre.")
+    break
