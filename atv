@@ -1,0 +1,12 @@
+#Classificar uma nota em categorias de desempenho.
+
+nota = float(input ("qual a nota do aluno:"))
+
+if float(nota) >=9:
+  print("Excelente.")
+elif float(nota) >=7:
+  print("bom.")
+elif float(nota)>=6:
+  print("regular.")
+elif float(nota) <6:
+  print("insuficiente.")
