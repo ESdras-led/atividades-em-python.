@@ -1,0 +1,37 @@
+#calculadora
+
+while True:
+  print("[1]somar")
+  print("[2]subtrair")
+  print("[3]multiplicar")
+  print("[4]dividir")
+  print("[5]terminar operações")
+  
+  escolha = int(input("escolha sua opção:"))
+  
+  if escolha == 1:
+    nm1 = int(input("digite um numero:"))
+    nm2 = int(input("digite o segundo numero:"))
+    soma= nm1 + nm2
+    print(f"a soma desses numeros da:{soma}")
+  
+  elif escolha == 2:
+    nm1 = int(input("digite um numero:"))
+    nm2 = int(input("digite o segundo numero:")) 
+    sub = nm1 - nm2                                        #sub = subtração 
+    print(f"a subtração  desses numeros da:{sub}") 
+  
+  elif escolha == 3:
+    nm1 = int(input("digite um numero:"))
+    nm2 = int(input("digite o segundo numero:"))
+    multi= nm1 * nm2                                     #multi = multiplicação
+    print(f"a multiplicação desses numeros da:{multi}")
+  
+  elif escolha == 4:
+    nm1 = int(input("digite um numero:"))
+    nm2 = int(input("digite o segundo numero:"))
+    div= nm1 / nm2                                           #div = divisão
+    print(f"a divisão desses numeros da:{div}")
+
+  if escolha == 5:
+    break
