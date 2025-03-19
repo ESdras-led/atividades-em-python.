@@ -1,0 +1,8 @@
+#programa para verificar a idade de uma pessoa pro cinema
+
+idade = input ("informe sua idade:")
+
+if idade < "12":
+  print ("infelizmente não tem idade para ver esse filme")
+elif idade >="12":
+  print ("bom filme")
