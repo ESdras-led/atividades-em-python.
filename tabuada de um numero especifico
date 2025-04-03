@@ -1,0 +1,6 @@
+# tabuada de um numero especifico
+numero = int(input("digite um numero que você quer saber a tabuada: "))
+
+for i in range(10):
+  print(F"Essa é a tabuada do seu numero {numero*(i+1)}")
+
