@@ -1,0 +1,35 @@
+
+import matplotlib.pyplot as plt
+
+def taxa_de_massa_magra():
+
+    nome = input("digite abaixo o nome do paciente:\n")
+    peso_inicial = float(input("digite o peso do paciente no inicio da dieta em kg:\n"))
+    peso_atual = float(input("digite o peso atual do paciente em kg:\n"))
+    dias_de_dieta = int(input("a quantos dias ele está na diet(em dias):\n"))
+
+    kilos_perdidos = peso_inicial - peso_atual
+    kilos_ganhos = peso_atual - peso_inicial
+
+    print(f"nome do paciente é: {nome}")
+    print(f"o peso inicial do paciente era: {peso_inicial}")
+    print(f"dias desde o começo da dieta: {dias_de_dieta}")
+    print(f"o peso atual do paciente é: {peso_atual}")
+
+    if peso_inicial > peso_atual:
+        print(f" os kilos perdidos do paciente foram: {kilos_perdidos}")
+    else:
+        print(f"os kilos ganhos do paciente foram{kilos_ganhos}")
+    
+
+    dias = [0,dias_de_dieta]
+    peso = [peso_inicial, peso_atual]
+
+    plt.plot( peso, dias,  marker  = 'o')
+    plt.title(f"evolução do paciente: {nome}")
+    plt.ylabel("dias de dieta")
+    plt.xlabel("peso(kg)")
+    plt.grid(True)
+    plt.show()
+    
+taxa_de_massa_magra()
